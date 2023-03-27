@@ -29,8 +29,8 @@ color: #000;
  background: #f5f3f3cb;
  padding-right: 5px;
  margin: 0 auto;
- width: 97%;
- height: 5vh;
+ width: 99%;
+ height: 5.4vh;
  align-items: center;
  font-size: 2rem;
  outline: none;
@@ -59,4 +59,11 @@ color: #000;
  
  button {
  font-size: 1.5em;
+ }
+
+ span {
+ position: relative;
+ bottom: .4em;
+ right: .1em;
+ font-size: .8em;
  }
