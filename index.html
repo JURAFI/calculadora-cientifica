@@ -17,11 +17,11 @@
       <div class="active">
       <div class="fila">
         <button onclick="clearError()">CE</button>
-        <button class="btn">x!</button>
+        <button onclick="fact()">x!</button>
         <button class="btn">(</button>
         <button class="btn">)</button>
-        <button class="btn">%</button>
-        <button class="btn">AC</button>
+        <button onclick="calculoPorcentaje()">%</button>
+        <button onclick="pantalla.value = '' ">AC</button>
       </div>
       <div class="fila">
         <button onclick="sin()">sen</button>
@@ -42,17 +42,17 @@
       <div class="fila">
         <button onclick="tan()">tan</button>
         <button onclick="raizCuadrada()">&#8730</button>
-        <button class="btn">1</button>
+        <button id='uno' class="btn">1</button>
         <button class="btn">2</button>
         <button class="btn">3</button>
         <button class="btn">-</button>
       </div>
       <div class="fila">
         <button onclick="e()">e</button>
-        <button class="btn">X <span>y</span></button>
+        <button onclick="pow()">X <span>y</span></button>
         <button class="btn">0</button>
         <button class="btn">.</button>
-        <button onclick="pantalla.value=eval(pantalla.value)">=</button>
+        <button onclick="pantalla.value=eval(pantalla.value, 0)">=</button>
         <button class="btn">+</button>
       </div>
     </div>
@@ -60,4 +60,15 @@
    </div>
   </body>
   <script src="index.js"></script>
+  <script type="text/javascript" src="vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".your-element"), {
+      max: 155,
+      speed: 2000
+    });
+    
+    //It also supports NodeList
+    VanillaTilt.init(document.querySelectorAll(".contenedor"));
+  </script>
+
 </html>

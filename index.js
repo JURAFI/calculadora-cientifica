@@ -24,31 +24,38 @@ for (item of btn) {
     pantalla.value = Math.tan(pantalla.value);
   }
   function pow() {
-    pantalla.value = Math.pow(pantalla.value,2);
+    pantalla.value = Math.pow(pantalla.value, 2);
   }
   function raizCuadrada() {
-    pantalla.value = Math.sqrt( pantalla.value,2);
+    pantalla.value = Math.sqrt(pantalla.value, 2);
   }
   function log() {
     pantalla.value = Math.log(pantalla.value);
   }
   function pi() {
-    pantalla.value = 3,1415926535897932;
+    pantalla.value = 3.1415926535897932;
   }
   function e() {
     pantalla.value = 2.71828182845904;
   }
   function fact() {
-   let i, num, f;
-   f = 1
-   num = pantalla.value;
-   for(i=1; i<=num; i++) {
-    f = f * i;
-   }
-   i=i - 1;
-   pantalla.value = f;
+    let i, num, f;
+    f = 1;
+    num = pantalla.value;
+    for (i = 1; i <= num; i++) {
+      f = f * i;
+    }
+    i = i - 1;
+    pantalla.value = f;
   }
+
   function clearError() {
-    pantalla.value = pantalla.value.substr(0,pantalla.value.length);
+    pantalla.value = pantalla.value.substr(0, pantalla.value.length - 1);
+  }
+
+  function calculoPorcentaje() {
+  
+    pantalla.value = pantalla.value / 100;
+
   }
 }
